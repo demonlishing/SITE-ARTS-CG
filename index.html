@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Artes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio - Murilo 3°TDS</h1>
+        <img src="images/logo.png" alt="Logo" width="150">
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Murilo, tenho 17 anos e estudo no colégio Dirce Celestino do Amaral. Apaixonado por Música e Jogos. Neste portfólio, você encontrará uma seleção das minhas obras mais recentes. Espero que goste!</p>
+        </section>
+
+        <section>
+            <h2>Minhas Artes</h2>
+            <div class="grid">
+                <div class="art">
+                    <a href="#" onclick="openModal('images/AloneStading.jpg')"><img src="images/AloneStading.jpg" alt="Arte 1"></a>
+                    <p>Arte 1 - ALONE</p>
+                </div>
+                <div class="art">
+                    <a href="#" onclick="openModal('images/E-ESPORTS.png')"><img src="images/E-ESPORTS.png" alt="Arte 2"></a>
+                    <p>Arte 2 - E-ESPORTS</p>
+                </div>
+                <div class="art">
+                    <a href="#" onclick="openModal('images/GLITCH.jpg')"><img src="images/GLITCH.jpg" alt="Arte 3"></a>
+                    <p>Arte 3 - GLITCH</p>
+                </div>
+                <div class="art">
+                    <a href="#" onclick="openModal('images/Stealf.png')"><img src="images/Stealf.png" alt="Arte 4"></a>
+                    <p>Arte 4 - STEALF</p>
+                </div>
+                <div class="art">
+                    <a href="#" onclick="openModal('images/SlipKnot.png')"><img src="images/SlipKnot.png" alt="Arte 5"></a>
+                    <p>Arte 5 - METAL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
